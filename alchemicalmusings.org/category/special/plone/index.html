@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Alchemical Musings &raquo; plone</title>
+	<meta name="generator" content="WordPress 6.8.5" /> <!-- leave this for stats please -->
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+	_uacct = "UA-170107-4";
+urchinTracker();
+</script>
+	<style type="text/css" media="screen">
+		@import url( ../../../wp-content/themes/gentle_calm/style.css );
+		/******************************************************************* 
+			Show link pointer images for external sites
+		*******************************************************************/
+		.entrybody a[href^="http:"] {
+			background: transparent url("../../../wp-content/themes/gentle_calm/images/external_link.gif") no-repeat 100% 50%;
+			padding-right: 10px;
+			white-space: nowrap;
+				}
+		.entrybody a:hover[href^="http:"] {
+			background: #F3F4EC url("../../../wp-content/themes/gentle_calm/images/external_link.gif") no-repeat 100% 50%;
+		}
+		/* This avoids the icon being shown on internal links.*/
+		.entrybody a[href^="http://alchemicalmusings.org"],
+		.entrybody a[href^="http://www.alchemicalmusings.org"] {
+			background: inherit;
+			padding-right: 0px;
+		}
+	</style>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://alchemicalmusings.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="https://alchemicalmusings.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="https://alchemicalmusings.org/feed/atom/" />
+	<link rel="pingback" href="https://alchemicalmusings.org/xmlrpc.php" />
+    	<link rel='archives' title='July 2019' href='../../../2019/07/index.html' />
+	<link rel='archives' title='March 2019' href='../../../2019/03/index.html' />
+	<link rel='archives' title='December 2018' href='../../../2018/12/index.html' />
+	<link rel='archives' title='December 2017' href='../../../2017/12/index.html' />
+	<link rel='archives' title='August 2017' href='../../../2017/08/index.html' />
+	<link rel='archives' title='March 2017' href='../../../2017/03/index.html' />
+	<link rel='archives' title='August 2015' href='../../../2015/08/index.html' />
+	<link rel='archives' title='February 2015' href='../../../2015/02/index.html' />
+	<link rel='archives' title='November 2014' href='../../../2014/11/index.html' />
+	<link rel='archives' title='September 2014' href='../../../2014/09/index.html' />
+	<link rel='archives' title='February 2014' href='../../../2014/02/index.html' />
+	<link rel='archives' title='January 2014' href='../../../2014/01/index.html' />
+	<link rel='archives' title='December 2013' href='../../../2013/12/index.html' />
+	<link rel='archives' title='September 2013' href='../../../2013/09/index.html' />
+	<link rel='archives' title='July 2013' href='../../../2013/07/index.html' />
+	<link rel='archives' title='June 2013' href='../../../2013/06/index.html' />
+	<link rel='archives' title='April 2013' href='../../../2013/04/index.html' />
+	<link rel='archives' title='February 2013' href='../../../2013/02/index.html' />
+	<link rel='archives' title='January 2013' href='../../../2013/01/index.html' />
+	<link rel='archives' title='October 2012' href='../../../2012/10/index.html' />
+	<link rel='archives' title='September 2012' href='../../../2012/09/index.html' />
+	<link rel='archives' title='August 2012' href='../../../2012/08/index.html' />
+	<link rel='archives' title='May 2012' href='../../../2012/05/index.html' />
+	<link rel='archives' title='April 2012' href='../../../2012/04/index.html' />
+	<link rel='archives' title='February 2012' href='../../../2012/02/index.html' />
+	<link rel='archives' title='January 2012' href='../../../2012/01/index.html' />
+	<link rel='archives' title='December 2011' href='../../../2011/12/index.html' />
+	<link rel='archives' title='September 2011' href='../../../2011/09/index.html' />
+	<link rel='archives' title='August 2011' href='../../../2011/08/index.html' />
+	<link rel='archives' title='July 2011' href='../../../2011/07/index.html' />
+	<link rel='archives' title='June 2011' href='../../../2011/06/index.html' />
+	<link rel='archives' title='March 2011' href='../../../2011/03/index.html' />
+	<link rel='archives' title='January 2011' href='../../../2011/01/index.html' />
+	<link rel='archives' title='December 2010' href='../../../2010/12/index.html' />
+	<link rel='archives' title='November 2010' href='../../../2010/11/index.html' />
+	<link rel='archives' title='October 2010' href='../../../2010/10/index.html' />
+	<link rel='archives' title='September 2010' href='../../../2010/09/index.html' />
+	<link rel='archives' title='July 2010' href='../../../2010/07/index.html' />
+	<link rel='archives' title='May 2010' href='../../../2010/05/index.html' />
+	<link rel='archives' title='January 2010' href='../../../2010/01/index.html' />
+	<link rel='archives' title='December 2009' href='../../../2009/12/index.html' />
+	<link rel='archives' title='October 2009' href='../../../2009/10/index.html' />
+	<link rel='archives' title='September 2009' href='../../../2009/09/index.html' />
+	<link rel='archives' title='August 2009' href='../../../2009/08/index.html' />
+	<link rel='archives' title='July 2009' href='../../../2009/07/index.html' />
+	<link rel='archives' title='June 2009' href='../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../2007/08/index.html' />
+	<link rel='archives' title='July 2007' href='../../../2007/07/index.html' />
+	<link rel='archives' title='June 2007' href='../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../2007/02/index.html' />
+	<link rel='archives' title='December 2006' href='../../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../2006/11/index.html' />
+	<link rel='archives' title='September 2006' href='../../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../2006/08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../2006/07/index.html' />
+	<link rel='archives' title='May 2006' href='../../../2006/05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../2006/04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../2006/03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../2006/02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../2006/01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../2005/09/index.html' />
+	<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="Alchemical Musings &raquo; plone Category Feed" href="https://alchemicalmusings.org/category/special/plone/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/alchemicalmusings.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.5"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min.css%3Fver=6.8.5.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="https://api.w.org/" href="https://alchemicalmusings.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://alchemicalmusings.org/wp-json/wp/v2/categories/14" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://alchemicalmusings.org/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.5" />
+</head>
+<body id="home" class="log">
+	<!-- The header begins  -->
+		<div id="header">
+                        <img src="../../../wp-content/uploads/2007/02/jonahs_staff_trans1.gif"  hieght="104" width="72" align="right" valign="top"></img>
+			<h1><a href="../../../index.html" title="Alchemical Musings" >Alchemical Musings</a></h1>
+			<div id="subtitle">
+				<!-- Here's the tagline  -->
+				Aurum nostrum non est aurum vulgi			</div>
+		</div>
+		<div id="headbar"></div>
+		<!-- The header ends  -->
+	<div id="container">
+		<div id="maincol"><!-- The main content column begins  -->
+			<div class="col">
+<div class="entry">
+			<h2 class="entrydate">February 17, 2008</h2>
+			<h3 class="entrytitle" id="post-499"><a href="../../../index.html%3Fp=499.html" rel="bookmark">Fabricating Freedom</a></h3>
+			<div class="entrybody">
+				<p><a href="http://flickr.com/photos/uncene/378721784/"><img decoding="async" src="http://farm1.static.flickr.com/135/378721784_4947840082_m.jpg" alt="" align="left" /></a><strong> </strong></p>
+<p><em>Originally posted on theploneblog.org</em></p>
+<p><strong>Free Software Developers at Work and Play</strong></p>
+<p>I haven’t posted much here lately, but I have been writing. I recently<br />
+finished my first semester as a doctoral student in Columbia&#8217;s school of journalism and one of the papers I completed draws directly on my experiences in the Plone Community.  A few years ago I remember being struck at how different open source development was from what I (and presumably others) imagined it to be. I kept pitching human interest stories to journalists, ones that might emphasize the playfulness, the sprinting,  and the organizational experimentation, but got very few nibbles. So, I finally wrote some of this up myself before it all fades from memory:</p>
+<p><strong><a href="http://pocketknowledge.tc.columbia.edu/home.php/viewfile/38498">Fabricating Freedom: Free Software Developers at Work and Play</a></strong></p>
+<p>The paper was for a wonderful class this semester at the New School taught by <a href="http://www.newschool.edu/gf/soc/faculty/carpignano/index.htm">Paolo Carpignano</a> (The Political Economy of Media &#8211; here is the <a href="http://jonahboss.fastmail.fm/school/newschool-political_economy/Pol%20Ec%20Syllabus%202007.doc">syllabus</a>).<br />
+The class was all about the shifting relations between fabrication and<br />
+communication, or more colloquially, work and play. We opened with Marx<br />
+and Hannah Arendt and closed with <a title="external-link" href="http://www.benkler.org/wealth_of_networks/index.php/Main_Page">Yochai Benkler</a> and <a title="external-link" href="http://www.danah.org/">danah boyd</a>. The piece I wrote is personal and anecdotal, but reflects on all that our community has taught me about free software, free culture, organizing, consensus building and the day to day politics of software development.</p>
+<p>enjoy.</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 10:16 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=499.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2008/02/17/fabricating-freedom/"
+    dc:identifier="https://alchemicalmusings.org/2008/02/17/fabricating-freedom/"
+    dc:title="Fabricating Freedom"
+    trackback:ping="https://alchemicalmusings.org/2008/02/17/fabricating-freedom/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">November 7, 2007</h2>
+			<h3 class="entrytitle" id="post-466"><a href="../../../index.html%3Fp=466.html" rel="bookmark">Plone University</a></h3>
+			<div class="entrybody">
+				<p><img decoding="async" src="http://farm2.static.flickr.com/1103/881564485_226ec27532_m.jpg" alt="" align="left" /><strong> </strong></p>
+<p><em>Originally published on theploneblog.org</em></p>
+<p><strong>Open source software as pedagogical scaffolding, and F/OSS ecologies as a dialogical knowledge communities. </strong></p>
+<p>This is a fun post recognizing the role of open source software and breaking routines in learning new programming patterns and paradigms.</p>
+<p><a title="external-link" href="http://www.oreillynet.com/ruby/blog/2007/09/7_reasons_i_switched_back_to_p_1.html">7 Reasons I switched back to PHP after 2 years on Rails</a></p>
+<blockquote><p>Rails was an amazing teacher. I loved it’s “do exactly as I say”<br />
+paint-by-numbers framework that taught me some great guidelines.<br />
+I love Ruby for making me really understand OOP. God, Ruby is so beautiful. I love you, Ruby.<br />
+But the main reason that any programmer learning any new language<br />
+thinks the new language is SO much better than the old one is because<br />
+he’s a better programmer now!</p></blockquote>
+<p>This story articulated an idea that I have been thinking about for a while &#8211; the ways in which developers working on open source software enter into an educational relationship with the software and the community (sometimes indirectly, mediated through the code).</p>
+<p>I have often appreciated all that Plone has taught me about the domain of content management, component architectures, extensible software design, internationalization, test driven development, responsible release management, etc etc. I know that it has taught me well since when I walk up to new pieces of complex software like Sakai or Drupal the concepts are familiar and often isomorphic. I can vouch that exposure to Plone has helped designers I know with stretch their CSS skills, improve the accessibility of their sites, and more cleanly separate presentation from logic.</p>
+<p>I have also made the case that for an organization to work on software in isolation is bit like having a conversation with yourself. At first you might arrive at some new insights, but its <em>really</em> hard to learn anything new in a hermetically-sealed vacuum chamber. The software world transforms so quickly that it is a Sisyphean task for any one person or organization to track. Joining a community, even if it is through the indirect, intermediary object of code, is a great way to continue learning and stay on top of emerging trends. The notion that learning happens through dialog is an old one; the notion that working with open source software is a form a dialog with the authors is a bit less obvious.</p>
+<p>My main critique of Derek&#8217;s post is that he doesn&#8217;t explicitly acknowledge the fact that Rails is open source, which is precisely what enabled him to learn so much from the framework. This isn&#8217;t just a matter of attribution, it has practical implications for being able to continue learning new tricks over time.  If he had realized that Rails-the-software embodied the knowledge of the Rails-the-community, he might not have been so quick to venture off and write his very own framework. I am not arguing that he should have steered clear of php, but he does not explain why he decided to roll his own framework as opposed to joining forces with Cake or another existing php framework, or at least using an existing php templating system. With a more explicit understanding of the origins of the knowledge that Rails-the-software captures, he may have appreciated the potential future gains of remaining part of some community.</p>
+<p>While it is possible to learn something from proprietary frameworks, &#8220;learning&#8221; is fundamentally about the open exchange of knowledge and meaning, which are values intrinsic to F/OSS. While you can learn something from a .NET api, you can&#8217;t step through the entire stack of software in the debugger. Perhaps more importantly, the cultural tendencies on an open project support constructionist poking and prodding (dare I say, hacking?).</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 9:21 pm under <a href="../../elements/earth/index.html" rel="category tag">earth</a>,<a href="../../discipline/epistemology/index.html" rel="category tag">epistemology</a>,<a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=466.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2007/11/07/plone-university/"
+    dc:identifier="https://alchemicalmusings.org/2007/11/07/plone-university/"
+    dc:title="Plone University"
+    trackback:ping="https://alchemicalmusings.org/2007/11/07/plone-university/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">February 8, 2007</h2>
+			<h3 class="entrytitle" id="post-493"><a href="../../../index.html%3Fp=493.html" rel="bookmark">Asymmetric Competition and the CMS</a></h3>
+			<div class="entrybody">
+				<p><em>Originally published on theploneblog.org</em><br />
+<strong></strong></p>
+<p><strong>Beyond the CMS &#8211; What are Plone&#8217;s greatest future competitors?</strong></p>
+<p>I recently encountered O&#8217;Reilly&#8217;s <a href="http://radar.oreilly.com/archives/2006/04/purposedriven_media.html">asymmetrical competition</a> meme and think its a good jumping off point to discuss the differences between Plone&#8217;s perceived and actual competition.</p>
+<p>First, let&#8217;s catch up to where we are today:</p>
+<p><a href="http://www.youtube.com/watch?v=6gmP4nk0EOE"><strong>Web 2.0 &#8230; The Machine is Us/ing Us<br />
+</strong></a><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="350" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="wmode" value="transparent" /><param name="src" value="http://www.youtube.com/v/6gmP4nk0EOE" /></object></p>
+<p>The opensource CMS horserace has seemingly settled on a <a href="http://www.idealware.org/articles/joomla_drupal_plone.php">few players</a>, and without provoking any religious wars, I continue to be impressed with the richness and maturity of all of these projects.</p>
+<p>But here in the educational sector there are rumblings which I think will spread beyond our corner. In our world &#8216;C&#8217; stands for Course, not &#8216;Content&#8217;, and the big players are <a href="http://www.nosoftwarepatents.com/">Blackboard </a>(which swallowed WebCT), <a href="http://www.sakaiproject.org/">Sakai</a> and <a href="http://moodle.org/">Moodle</a>. Here too, competition may come from surprising corners, as the game itself changes beneath us.</p>
+<blockquote><p>&#8220;Collaboration via the net does not necessarily require monolithic, expensive tool suites that aim to do everything under one umbrella. We will share and demonstrate the use of readily available, mostly free, discrete sets of &#8220;small&#8221; and &#8220;loosely joined&#8221; technologies &#8211; weblogs, wikis, instant messaging, audio/video chat. The loose joining means that how they are connected are not necessarily in the programming of the software, but the ways people can use them in a social context that is an environment of dynamic, changing relationships and connections, rather than the rigid, limited ones defined by computer code.&#8221;</p></blockquote>
+<p>from <a href="http://www.eurodl.org/materials/contrib/2006/Christian_Dalsgaard.htm">Social software: E-learning beyond learning management systems</a>.</p>
+<p>This argument is elaborated on, with many examples of applications that might work this way in this paper:</p>
+<p><a href="http://llt.msu.edu/vol10num2/emerging/">EMERGING TECHNOLOGIES<strong> Tag Clouds in the Blogosphere: Electronic Literacy and Social Networking </strong></a></p>
+<p>So what does this mean for the other sectors where Plone operates? I have been hanging out in Drupal land lately, and for a variety of reasons I don&#8217;t consider that platform to be a serious threat to Plone, in the long term (more on that in another post).</p>
+<p>On the other hand, and this might raise some eyebrows, folks maybe should take a peek at <a href="http://codex.gallery2.org/index.php/Gallery2:Roadmap:2.2">Gallery 2.2</a> . Yeah, its in php, and they don&#8217;t have enough unit tests, but it does a really nice job of solving the &#8220;bucket&#8221; problem &#8211; that is, easily publishing a repository of digital assets on the web. Their next version will handle audio and video files, and the software is popular enough that people have built desktop clients for iPhoto and Picassa. They have a good story for multi-site installations, upgrades, and even a web based mechanism for upgrading plugins. Just imagine mashing up this backend store with a social-networking tool like <a href="http://elgg.net/">elgg</a>. Maybe you could create complex and elaborate views of your data with widgets coming out of the <a href="http://simile.mit.edu/">simile project</a> (<a href="http://simile.mit.edu/exhibit/">exhibit</a> and <a href="http://simile.mit.edu/timeline/">timeline</a>, in particular). You might even be able to use a visual programming tool, like <a href="http://pipes.yahoo.com/">Yahoo&#8217;s pipes </a>or <a href="http://services.alphaworks.ibm.com/qedwiki/">IBM&#8217;s QEDWiki</a> to assemble this application.</p>
+<p>The real threat here isn&#8217;t Gallery. Its the loosely-joined, disconnected applications that are becoming connected through the component architecture of HTTP itself (plus a few decent patterns and standards). No one wants to be trapped in a silo, not even if its decked out with hardwood floors, leather furniture, and a marble mantle.</p>
+<p>Plone can be a major provider in this hub of communications, maybe even sometimes at the center. But we do need to try to anticipate the future role of the CMS in the face of asymmetric competition.</p>
+<p>As <a href="http://www.netvironments.org/">Laura Trippi</a> once put it, Content Management Systems like Plone,<br />
+are turning content produces into coders, and vice versa. We&#8217;re<br />
+creating monsters, and they might soon be outgrowing the tools they<br />
+were weaned on.</p>
+<p>(thanks to Biella for <a href="http://savageminds.org/2007/02/05/mike-wesch-rocks-the-video-essay/">the video reference</a> and the <a href="http://healthhacker.org/satoroams/?p=716">critical commentary</a>).</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 10:06 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=493.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2007/02/08/asymmetric-competition-and-the-cms/"
+    dc:identifier="https://alchemicalmusings.org/2007/02/08/asymmetric-competition-and-the-cms/"
+    dc:title="Asymmetric Competition and the CMS"
+    trackback:ping="https://alchemicalmusings.org/2007/02/08/asymmetric-competition-and-the-cms/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">November 6, 2006</h2>
+			<h3 class="entrytitle" id="post-496"><a href="../../../index.html%3Fp=496.html" rel="bookmark">Honest Software</a></h3>
+			<div class="entrybody">
+				<p><img fetchpriority="high" decoding="async" src="http://static.flickr.com/121/289037975_bfd97d0adc.jpg?v=0" alt="" width="272" height="204" align="left" /></p>
+<p><em>Originally publihsed on theploneblog.org</em></p>
+<p><strong>How hybrid economies help keep software honest.</strong></p>
+<p>Last week&#8217;s <a href="http://blogs.onenw.org/jon/archives/2006/10/30/riding-high-on-plone-love/">Plone Conference</a> was truly phenomenal &#8211; provocative, intense, and fun (big thanks Jon and <a href="http://onenw.org/">ONE/Northwest</a>!).</p>
+<p>One of the most amazing things I experienced last week was alluded to in Eben Moglen&#8217;s keynote (to be <a href="http://plone.org/events/conferences/seattle-2006/">posted</a> soon)- the manner in which this community has managed to bring together people who don&#8217;t ordinarily interact.</p>
+<p>Throughout the breakout sessions, I continued to question dividing us up according to our respective vertical sectors &#8211; Corporate, Non-Profit, Educational, and Government. As I have <a href="http://jonahboss.fastmail.fm/wikimania/wikimania_poster.jpg">begun</a> to write about <a href="http://plone.org/events/sprints/past-sprints/bigapple#About">elsewhere</a>, systems like Plone can help balance the flow of communication and power between people in a variety of situations and settings. Content, collaboration, and community are contexts which exist across sectors, and the tools we all need cross over as well (sometimes with slightly different tunings).</p>
+<p>In many ways lumping together all the folks involved with education is odd. Universities are microcosms of cities, and their IT needs are as diverse as the the rest of the world. However, there are still structural and social similarities that form the basis for common language and culture. After engaging with my fellow educators a the educational panel session and the BOF session I understood the value of us sharing and strategizing, beyond just commiseration.</p>
+<p>But through it all, there was one thing that united all of the different attendees &#8211; a piece of general purpose software called &#8216;Plone&#8217;.</p>
+<p>It is worth dwelling on this mixture of participants and the varying forces they apply to the software. Lessig and Benkler have both been <a href="http://www.lessig.org/blog/archives/003550.shtml">writing a great deal about hybrid economies lately</a>, trying to understand their rhythms, and how we might be able to design them to succeed. They have been writing generally about the &#8220;commercial economy&#8221; and the &#8220;second economy&#8221; (sharing, social production, etc), but the lessons may cross over directly to our community.</p>
+<p>I realized in Seattle how beneficial diversity can be for software production.<br />
+Most of the consultants using Plone are there strictly for traditional market considerations &#8211; to make a profit. They are helping to keep the software honest. Unlike some other open source projects which exclusively service the educational world, Plone is not sheltered from the raw, harsh forces of the commercial market. This means that some of the people using Plone use it because it helps them get their jobs done efficiently. Others have called this &#8220;<a href="http://jroller.com/page/obie?entry=productivity_arbitrage">productivity arbitrage</a>&#8220;, and it is a concept that may hold the key to designing successful open source projects.</p>
+<p>It is challenging to imagine working backwards and trying to design a <a href="http://ccnmtl.columbia.edu/draft/jonah/vienna2005/html/img11.html">software ecology</a> which captures the hearts and minds of such a diverse following. No small task.</p>
+<p>As Rheingold <a href="http://www.businessweek.com/bwdaily/dnflash/aug2004/nf20040811_1095_db_81.htm">said</a> &#8220;There&#8217;s been an<br />
+assumption that since communism failed, capitalism is triumphant,<br />
+therefore humans have stopped evolving new systems for economic<br />
+production.&#8221; &#8211; Is Plone&#8217;s ecology an example of one of these new systems, and if so, what are our distinguishing characteristics?</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 10:13 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=496.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/11/06/honest-software/"
+    dc:identifier="https://alchemicalmusings.org/2006/11/06/honest-software/"
+    dc:title="Honest Software"
+    trackback:ping="https://alchemicalmusings.org/2006/11/06/honest-software/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">September 5, 2006</h2>
+			<h3 class="entrytitle" id="post-491"><a href="../../../index.html%3Fp=491.html" rel="bookmark">One Python Per Child</a></h3>
+			<div class="entrybody">
+				<p><a href="http://flickr.com/photos/ethanz/156904576/"><img decoding="async" src="http://static.flickr.com/72/156904576_06c15a7404.jpg?v=0" alt="" width="213" height="284" align="left" /></a><em>Originally published on theploneblog.org</em></p>
+<p><strong>The $100 laptop project has chosen Python as the primary development language for The Laptop.</strong></p>
+<p>I was lucky enough to get my hands on an <a href="http://laptop.org/">olpc</a> developer board, and have spent a little time learning about the platform and project.</p>
+<p>While there are a <a href="../../../2006/08/10/one-lost-identity-per-child/index.html"> few issues</a> I  have with the project, it is really an thrilling moment in educational technology and after holding the hardware in my own hands I actually believe this vision might truly manifest.</p>
+<p>The main reason I am writing about this in the Plone blog is I have learned that the olpc&#8217;s application development language of choice is Python!</p>
+<p class="callout"><a href="http://wiki.laptop.org/go/development_issues" target="_self">Sheckitout</a>.</p>
+<p>While Plone itself is probably not well suited for the laptop itself &#8212; The Laptop&#8217;s hardware characteristics are closer to a pda w/ a big screen than a MacBook Pro  (plone-on-a-stick? maybe it could ship on a thumbnail drive), it is easy to imagine communities of practice emerging around this platform. Places where educators and students alike can share tips and tricks, strategies and pitfalls. Who will be their dotmac?</p>
+<p>Admittedly, these devices are being built to operate unconnected to the Internet, communicating with each other through ad-hoc mesh networks (<a href="http://wiki.laptop.org/go/Sugar_design_review_2#Social_presence" target="_self">presence</a> will be a very low level primitive in this environment, and all applications will have access to it), there may still be a role for a server w/in the network.</p>
+<p>I don&#8217;t know exactly how Plone fits into the larger OLPC strategy, but I get the sense that with all the momentum and capital around this project, if Plone gets there lots of people will see it. And many of them may be the next generation of Python/Plone developers.</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 10:04 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=491.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/09/05/one-python-per-child/"
+    dc:identifier="https://alchemicalmusings.org/2006/09/05/one-python-per-child/"
+    dc:title="One Python Per Child"
+    trackback:ping="https://alchemicalmusings.org/2006/09/05/one-python-per-child/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">July 13, 2006</h2>
+			<h3 class="entrytitle" id="post-489"><a href="../../../index.html%3Fp=489.html" rel="bookmark">New York State of Plone</a></h3>
+			<div class="entrybody">
+				<p><img decoding="async" src="http://static.flickr.com/73/182509294_2b1387e602.jpg?v=0" alt="" width="243" height="182" align="left" /></p>
+<p><em>Originally published on theploneblog.org</em></p>
+<p><strong>Preliminary report on the Big Apple Sprint</strong></p>
+<p>July fourth has come and gone, but the fireworks set off at <a href="http://plone.org/events/sprints/bigapple/big-apple-sprint-details/" target="_self">last week&#8217;s sprint</a> are still visible.</p>
+<p>The sprinters arrived at Columbia University bright and early, Wednesday morning. (note to all future sprint organizers: tell the caterers to skip the decaf and double the regular order).  About ~13-15 sprinters were present, but we also coordinated remote sprints with Austria (+5 hours ahead) and Utah (-2 hours behind) meaning we were basically sprinting around the clock.</p>
+<p>We all used the freely available, plone-based, <a href="http://www.openplans.org/projects/big-apple-plone-sprint" target="_self">OpenPlans</a> service to manage our collaboration and everyone found the software to be extremely reliable and easy to use.</p>
+<p>The sprint began with introductions and detailed demos of the tools and<br />
+products people had been working on and were most proud of. Sprints are<br />
+difficult to plan in advance since the skills and interests of the<br />
+attendees are not decided until the final roster shows up. A diverse<br />
+range of interests were represented, but common themes rapidly emerged<br />
+&#8211; most of us were working at or with non-profits, building community sites with educational goals,<br />
+and we all had a very strong interest in participatory media (in contradistinction to mass broadcast media). It became<br />
+apparent that although we were all working on different problems, very similiar features and tools could be part of our solutions.</p>
+<p>The sprinters self-organized into 3 teams (+ 1 remote team):</p>
+<p><strong>Multimedia</strong> &#8211; focusing on improving the handling of multimedia<br />
+content w/in Plone. Topics included transparent management of multiple<br />
+media formats, improving the quicktime player, abstracting the common controls from the different media player formats, merging Austria&#8217;s<br />
+ATVideo bittorrent branch, allowing for remote resources to be managed by the<br />
+media types, and the integration of CCNMTL&#8217;s video clipping tool into<br />
+<a href="http://dev.plone.org/collective/browser/PloneMultimediaBundle" target="_self">PloneMultimedia</a>. Thanks to Nate, Gary, Anna, Kurt, and Sky for making this group a productive success.</p>
+<p>Discussions emerged around the hybridization of modern media formats.<br />
+Is an audio track with synchronized gifs a piece of audio or video media? Modern events are now distributed in multiple media<br />
+formats (e.g. podcasts and vodcasts) &#8211; might PloneMultimedia benefit from a<br />
+UI analogous to PloneLingua? What about metadata embedded directly in<br />
+the binary file? Should it be editable ttw? Which file is the<br />
+canonical file and which are the derivatives? Whatsoever will we all do about large file support?!?</p>
+<p>A new &#8216;media&#8217; container was introduced to PloneMultimedia allow for the mgmt of media that spans multiple traditional formats.</p>
+<p><strong>Annotations/Tagging</strong> &#8211; laying out the jigsaw puzzle that tagging,<br />
+rdf, taxonomies, folksonomies, and sticky notes, and <a href="http://microapps.org/" target="_self">microapps</a> have become in the hopes of<br />
+consolidating on a common strategy to move forward. The <a href="http://openplans.org/projects/yucca" target="_self">Yucca</a> project was born<br />
+after we all began to realize how many of our problems would naturally fall into place with a robust engine which supports user contributed content annotations.</p>
+<p>Also, work was done by Anders and Chad on the <a href="http://plone.org/products/stickies" target="_self">sticky notes product</a> with the aim of<br />
+factoring out the notes so they could be used outside of plone too<br />
+(with the persistence abstracted, so that it could be backed by a<br />
+microapp &#8211; like <a href="http://thraxil.org/users/anders/posts/2006/03/08/tasty-lightning/" target="_self">pita</a>, or even stored <a href="http://codinginparadise.org/projects/storage/README.html#articles" target="_self">client side</a>), as well as improving the<br />
+editability of the notes &#8211; they now support &#8220;double-click to edit&#8221;.<br />
+Great job!</p>
+<p><strong>Blogging/Syndication</strong> &#8211; This group (Rob and Kurt) was primarily working on polishing quills so that it provides a smooth user experience.<br />
+Progress continues and Quills is looking like a serious contender.</p>
+<p><strong>Content Licensing &#8211; </strong>see Nate&#8217;s post on <a href="http://nateaune.com/2006/07/13/content-licensing-in-plone/" target="_self">conetent licensing in plone</a>. This work was conducted primiarly by the group working in Utah, out of <a href="http://cosl.usu.edu/" target="_self">C()SL</a>.</p>
+<p>In case its not obvious, there was a great deal of overlap between the interests of the groups. For example, the multimedia team was also very interested in tagging, syndication ((p/v)odcasts), and licensing. Although it initially seemed challenging to tease the participants apart, the groups self organized quite organically.</p>
+<p>Some time early in the sprint, Rob treated us all to an impromptu tutorial on z3 annotations and continued to support the various groups in their attemps to absorb the new world order. By the end of the day, 3 seperate pairs of developers had the <a href="http://dev.plone.org/collective/browser/contentratings/trunk" target="_self">contentratings product</a> installed and running, demonstrating how important it is for there to be good examples representing best practices in the collective &#8211; these practices spread virally. Whit actually spent a chunk of time with Christof and Darian thinking about a good packaging system for keeping the z2 and z3 layers as thin as possible. They also spent time backporting the tagger product from zope 2.10 to  2.9.</p>
+<p>Throughout the sprint curious academics wandered through in an attempt to catch the rare glimpse of a geek working in the wild.</p>
+<p>Ian Bicking also stopped by to check in with his <a href="http://blog.ianbicking.org/new-job-open-plans.html" target="_self">new coworkers</a>.</p>
+<p>Since 3 days of sprinting is never enough, sprinting actually continued over the weekend at the openplans offices with a reduced number of hardcore plonistas. Christoff was gracious enough to invite us into his home for a home cooked meal.</p>
+<p>If anyone has anything else to add to this report, please do &#8211; sorry I missed it.</p>
+<p>The sprint was very productive, educational, and great fun as well.<br />
+Beyond the technical achievements, relationships were forged that we<br />
+expect to flourish in the months to come. I think we all witnessed<br />
+tremendous convergence across our organizational requirements, and are<br />
+also convinced that the tools we are working on will be in great demand<br />
+once the corporate world figures out how useful these technologies can<br />
+be.</p>
+<p>Throughout the sprint participants shared tips and tricks,<br />
+demonstrating how important live, in-person communication remains, even<br />
+in the Google Age. This was especially apparent when the nyc sprinters<br />
+attempted to convey proceedings to the remote sprinters and we felt the<br />
+limitations of geographic displacement.</p>
+<p>Sky <a href="http://flickr.com/photos/thraxil/186710629/in/set-72157594194853535/" target="_self">got married</a> on Sunday in a park on the Hudson river. His last days as a<br />
+bachelor were devoted to this Sprint, and we all wish him and his new<br />
+wife a happy and healthy (Plone-free) honeymoon.</p>
+<h3>Pictures</h3>
+<p><a href="http://www.flickr.com/photos/tags/bigapplesprint/ " target="_self">&#8220;bigapplesprint&#8221; on flickr.com<br />
+</a></p>
+<p>And, since Anders is <a href="http://thraxil.org/users/anders/posts/2005/11/27/what-is-a-photo/version/1121/" target="_self">so special</a>, <a href="http://www.flickr.com/photos/thraxil/sets/72157594188306560/" target="_self">here</a> is his set:</p>
+<p>Special thanks to our hosts, <a href="http://ccnmtl.columbia.edu" target="_self">Columbia&#8217;s Center for New Media Teaching and Learning</a> for sponsoring the sprint and making us all feel at home in New York City.</p>
+<p><img decoding="async" src="http://static.flickr.com/18/23882882_5a3d41d4f3.jpg?v=0" alt="" /></p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 10:01 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=489.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/07/13/new-york-state-of-plone/"
+    dc:identifier="https://alchemicalmusings.org/2006/07/13/new-york-state-of-plone/"
+    dc:title="New York State of Plone"
+    trackback:ping="https://alchemicalmusings.org/2006/07/13/new-york-state-of-plone/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">May 31, 2006</h2>
+			<h3 class="entrytitle" id="post-480"><a href="../../../index.html%3Fp=480.html" rel="bookmark">Death and Taxonomies</a></h3>
+			<div class="entrybody">
+				<p><em>Originally published on theploneblog.org</em></p>
+<p><strong>A forray into drupal 4.7&#8217;s taxonomy system and what Plone can learn from it.</strong></p>
+<p>I have been moonlighting on a Drupal project and paying close attention to their taxonomy system. Drupal&#8217;s taxonomy/category/tagging system was completely revamped for their 4.6-&gt;4.7 release &#8211; a release close to a full year in the making, analogous to the Plone 2.0-&gt;2.1 &#8220;minor&#8221; point release.</p>
+<p>The site I have been working on, <a href="http://www.theicarusproject.net" target="_self">theicarusproject.net</a></p>
+<p>has a very rich collection of content, and one of the primary motivations for the migration is to get a better handle on the classification system &#8211; noboday can find anything on the current site. They were committed to Drupal long before I arrived, so I dug in with the hope of learning something from the contrast.</p>
+<p>PHP bashing aside, there are alot of interesting things happening in Drupal land. I hope to follow up this post with a few more cross-pollinating nuggets, but for now I will focus on their taxonomy system.</p>
+<p>Taxonomies in Drupal are considered the heart of the system, and the essential modules ship with the core and cannot be disabled. Most URLs in Drupal are effectively queries, much like our smart folders (actually, for anything aside from anti-chronological display order you need to install the <a href="http://drupal.org/project/views" target="_self">Views module</a>) but the display results are all instances of content with matching vocabulary terms. The absence of folders and containment initially confuses many administrators, and renders breadcrumbs largely useless, but does allow for the creation of sophisticated information architectures.</p>
+<p>Taxonomies are managed top-down, not bottom-up, and have a separate administrative interface for their creation and management. Once the taxonomy vocabularies are created, specific terms can be added to these vocabularies without having to create content associated with those terms (in contrast to a bottom-up category system, like the mediawiki).</p>
+<p>Category Management  &#8211; Vocabulary Listings:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-508" title="vocabulary_listing" src="../../../wp-content/uploads/2006/05/vocabulary_listing-300x167.jpg" alt="vocabulary_listing" width="300" height="167" srcset="../../../wp-content/uploads/2006/05/vocabulary_listing-300x167.jpg 300w, ../../../wp-content/uploads/2006/05/vocabulary_listing.jpg 926w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>Druapl supports multiple vocabularies, which can each be associated with one or more content types. Vocabularies can be flat, one level deep, or N-levels deep (hierarchical). They can be fixed or free form (meaning content authors can make up new categories upon content creation). The core tagging system does not support the creation of tags per-user, per-object &#8211; only per-object.</p>
+<p>Category Management  &#8211; Add a Vocab:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-510" title="add_vocabulary" src="../../../wp-content/uploads/2006/05/add_vocabulary-300x242.jpg" alt="add_vocabulary" width="300" height="242" srcset="../../../wp-content/uploads/2006/05/add_vocabulary-300x242.jpg 300w, ../../../wp-content/uploads/2006/05/add_vocabulary.jpg 951w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>Category Management  &#8211; Add/Edit a Term:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-511" title="edit_term" src="../../../wp-content/uploads/2006/05/edit_term-300x242.jpg" alt="edit_term" width="300" height="242" srcset="../../../wp-content/uploads/2006/05/edit_term-300x242.jpg 300w, ../../../wp-content/uploads/2006/05/edit_term.jpg 951w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>The Drupal taxonomy system is very powerful, but its power is very open ended and does not necessarily lead users towards a uniform experience. The confusion around categories and taxonomies is best exemplified by the <a href="http://category.greenash.net.au/" target="_self">category module</a> meant to consolidate and simplify taxonomy and navigation, but there is no consensus on its incorporation into the core.</p>
+<p>A large number of modules are built around taxonomies. Core Drupal supports roles, but no groups (<a href="http://drupal.org/project/og" target="_self">organic groups</a> is a popular access delegatoin solution, but it is incompatible with other access restriction modules &#8211; so you have to choose one), and does not have a notion of containment (ie folders). So, for example, one way to restrict editing access is by enabling the <a href="http://drupal.org/project/taxonomy_access" target="_self">taxonomy access</a> module. Another useful module is the <a class="generated" href="http://drupal.org/project/taxonomy_browser" target="_self">taxonomy browser</a> which allows for advanced search against unions/intersections of vocab terms.</p>
+<p>Category Browser:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-512" title="category_browser" src="../../../wp-content/uploads/2006/05/category_browser-300x246.jpg" alt="category_browser" width="300" height="246" srcset="../../../wp-content/uploads/2006/05/category_browser-300x246.jpg 300w, ../../../wp-content/uploads/2006/05/category_browser.jpg 954w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>Once vocabularies are created, and terms added, content can be associated with these terms:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-513" title="content_creation" src="../../../wp-content/uploads/2006/05/content_creation-300x246.jpg" alt="content_creation" width="300" height="246" srcset="../../../wp-content/uploads/2006/05/content_creation-300x246.jpg 300w, ../../../wp-content/uploads/2006/05/content_creation.jpg 954w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>Working on this site really drove home the value in separating the navigation axis (section) from the thematic axis (keywords), and separating these dimensions was easy to accomplish with the taxonomy/category tools built into drupal. In particular, once the scheme was developed, managing vocabulary lists (even hierarchical ones) is intuitive, albeit slightly clunky. I further chose to introduce a free-form tagging dimension for member contributed posts which may or may not fit into the fixed taxonomy. This is similar to myspace and facebook allowing for free-form hobbies and interests, and banking on a large enough user base that there will be overlap and potentially interesting intersections.</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-514" title="section_vocab" src="../../../wp-content/uploads/2006/05/section_vocab-300x242.jpg" alt="section_vocab" width="300" height="242" srcset="../../../wp-content/uploads/2006/05/section_vocab-300x242.jpg 300w, ../../../wp-content/uploads/2006/05/section_vocab.jpg 951w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-515" title="keywords_listing" src="../../../wp-content/uploads/2006/05/keywords_listing-300x246.jpg" alt="keywords_listing" width="300" height="246" srcset="../../../wp-content/uploads/2006/05/keywords_listing-300x246.jpg 300w, ../../../wp-content/uploads/2006/05/keywords_listing.jpg 954w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>The system still does not allow for the intuitive modeling of a many-to-many relationship, which I continue to think is the litmus test which will mark of a truly powerful taxonomy UI.  There is still quite a bit of programmer know how involved in setting up this system so that it operates the way that content administrators expect, and arguably there are too many degrees of freedom introduced by such a general purpose modeling capability (if you think about it, a tagging system can essentially allow web administrators to model relationships which used to require programming custom applications against an rdbms).</p>
+<p>Nonetheless, Drupal&#8217;s taxonomy/category/vocabulary system definitely captures a few use cases more elegantly than Plone&#8217;s current core does. But perhaps the real lesson is the importance of not mixing navigation space and content space, which can be kept separate in Plone, but is all too easy to conflate (in Drupal too!).</p>
+<p>Note: most things I describe in this case study could have been accomplished within core Plone &#8211; I think the most interesting things here are the administrative UI for multiple vocabulary management, the different types of vocabularies, and how central they are in the construction of a Drupal site.</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 9:41 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=480.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/05/31/death-and-taxonomies/"
+    dc:identifier="https://alchemicalmusings.org/2006/05/31/death-and-taxonomies/"
+    dc:title="Death and Taxonomies"
+    trackback:ping="https://alchemicalmusings.org/2006/05/31/death-and-taxonomies/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">March 18, 2006</h2>
+			<h3 class="entrytitle" id="post-474"><a href="../../../index.html%3Fp=474.html" rel="bookmark">There is no folder</a></h3>
+			<div class="entrybody">
+				<p><em>Originally published on theploneblog.org</em></p>
+<p><strong>Do not try to bend the folder &#8212; that&#8217;s impossible. Instead, only try to realize the truth. Then you will see that it is not the folder that bends&#8211;it is only yourself.</strong></p>
+<p><a href="http://www.dlib.org/dlib/april05/hammond/04hammond.html" target="_self">Tagging</a> seems to have spurred a <a href="http://www.google.com/search?q=cache:n0tqy-bJVmMJ:www.hpl.hp.com/research/idl/papers/tags/tags.pdf+golder+huberman&amp;hl=en&amp;gl=us&amp;ct=clnk&amp;cd=1&amp;client=firefox-a" target="_self">growing</a> <a href="http://www.dlib.org/dlib/january06/guy/01guy.html" target="_self">amount</a> of <a href="http://www.rashmisinha.com/archives/05_09/tagging-cognitive.html" target="_self">research</a> on <a href="http://studyplace.ccnmtl.columbia.edu/Members/jonah/papers/collecting_knowledge/" target="_self">categories</a> and <a href="http://wiki.osafoundation.org/bin/view/Journal/ClassificationPaperOutline2" target="_self">classification</a>.</p>
+<p>A recent paper by Clay Shirky, entitled <a href="http://shirky.com/writings/ontology_overrated.html" target="_self">Ontology is Overrated: Categories, Links, and Tags</a> directly challenges the desktop metaphor which currently underlies much of Plone&#8217;s UI. To be sure, it is certainly possible to model the connections that Shirky describes using topics, smart folders, and a disciplined use of keywords, but the <a href="http://www.xprogramming.com/xpmag/whatisxp.htm#metaphor" target="_self">metaphor</a> is critical for designing and intuitive system, all the way down to the icon.</p>
+<p>I have recently been working a bit with Drupal, and their handling of this problem is worth checking out.  The core <a href="http://drupal.org/node/299" target="_self">taxonomy</a> module, combined with its corresponding menuing systems <a href="http://drupaldocs.org/api/head/group/menu" target="_self">(menu</a>, <a href="http://drupal.org/project/sitemenu" target="_self">sitemenu</a>, <a href="http://drupal.org/node/3724" target="_self">taxonomy menu</a>) provide a great deal of flexibility in this regard.</p>
+<p>Organization is going organic.</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 9:34 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=474.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/03/18/there-is-no-folder/"
+    dc:identifier="https://alchemicalmusings.org/2006/03/18/there-is-no-folder/"
+    dc:title="There is no folder"
+    trackback:ping="https://alchemicalmusings.org/2006/03/18/there-is-no-folder/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">March 4, 2006</h2>
+			<h3 class="entrytitle" id="post-477"><a href="../../../index.html%3Fp=477.html" rel="bookmark">The Me Generation</a></h3>
+			<div class="entrybody">
+				<p><strong>isomorphic surprises: stickies, tasty, and the importance of user contributed content</strong></p>
+<p>I have been thinking alot about tagging lately, especially how a <a href="http://tagschema.com/blogs/tagschema/2005/06/slicing-and-dicing-data-20-part-2.html" target="_self">complete tagging system</a> &#8211; comprised of user-item-tag triplets, is isomorphic to <a href="http://www.xml.com/pub/a/2001/01/24/rdf.html?page=1" target="_self">rdf</a>&#8216;s subject-predicate-object triplets. It is amusing to think about how egocentric <a href="http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web-20.html" target="_self">Web 2.0</a> is &#8211; The subject is always <em>me</em>. Web 2.0 might be made of people, but not just any people &#8211; Just the most important one in the world.</p>
+<p>Today I had a fun time trying to explain to people on irc the power and importance of user contributed content annotations within plone. Crucially, user content annotations are per-user, per-object, and in many cases a single user might want to annotate a particular object with more than one annotation.</p>
+<p>Interesting annotations can come in many flavors. There are free form notes, fine grained annotations (anchored to particular phrases &#8211; think msword trackback &#8211; or geometrical coordinates on the target &#8211; nice for image annotations), keyword annotations (aka &#8211; tags), etc ect. There many problems that can be solved with custom per user content annotations, including quiz and poll results, per student answer submission, and lately we have been working on allowing users to clip audio and video by annotating start and end times on media objects.</p>
+<p>It is important not to confuse per-user tagging with DC:Subject &#8211; the dc metadata is shared across all users (like categories in the wikipedia) and in that sense, is global. While we are on the topic of tags, it is useful to talk about the vocabulary that drives the tagging. Vocabularies can be fixed or free, individual or collaborative, and personal or shared. All of these variations are interesting in different cntexts, and have to do with whether or not I see your tags, or if we each are developing our own ontologies.</p>
+<p>In educational technology annotations are a big part of the problems we are trying to solve, but there are tons of use cases in the world at large. Additionally, a high performance, robust tagging engine can power personal content organization, like gmail&#8217;s labels.</p>
+<p>Which brings me to the products we have been developing at <a href="http://ccnmtl.colubmia.edu" target="_self">CCNMTL</a>. We have been using PloneStickies, a general purpose content annotation framework, in production for over a year now. Built using AT References, it allows us to create per-user AT objects connected to the target object. AT Schema Annotations won&#8217;t do the trick here since, like DC:Subject, these annotations are instance-wide. Z3 annotations might work, but by building AT derived stickies, we pick up search, workflow, permissions, and the richness of AT. This allows us to quickly and easily develop custom stickies, like the StickyClip.</p>
+<p><a href="http://plone.org/products/stickies" target="_self">PloneStickies</a> has <a href="http://plone.org/products/stickies/roadmap/psc_improvements_listing" target="_self">a ways to go</a>, but the basics work great. It is not yet super useful out of the box, since the portlet it ships with only allows users to attach a single free form StickyNote to the target object. But it is great to develop applications with. It ships with with some super snazzy css stickies, complete with colored/resizable/title-barred/drop-shadowed/roll-upable/transparent-when-dragging notes, which can preserve their own x-y position and state across sessions and never fall off your screen. It now supports attaching multiple stickies to a target, but does not yet provide a mechanism for the target object to place the stickies itself.</p>
+<p>At first we thought we could implement a Plone tagging solution using this framework &#8211; just create a StickyTags made out of keyword fields, and voilà  &#8211; plonr. Trouble was, since tagging is such a symmetrical model, its tough to build an efficient zodb implementation (for me, at least) that can handle all the querrying we wanted to do.</p>
+<p>Enter the <a href="http://tasty.python-hosting.org/" target="_self">tasty</a> <a href="http://thraxil.com/users/anders/posts/2006/03/08/tasty-lightning/" target="_self">microapp</a> and the <a href="http://svn.plone.org/view/collective/PloneTasty/trunk/" target="_self">PloneTasty</a> proxy (about 90% done). Tasty is a stateful (sqlobject) turbogears component that exposes a <a href="http://tasty.python-hosting.com/wiki/TastyRestInterface" target="_self">REST api</a>, ships with its own snazzy ajax tagging client, and can be used across <a href="http://tasty.python-hosting.com/wiki/ClientImplementations" target="_self">frameworks, languages, and platforms</a>. We are even <a href="http://alchemicalmusings.blogspot.com/2006/03/saints-in-church-of-writely.html" target="_self">hoping</a> it can help make the world a better place.</p>
+<p>So StickyTags (which doesn&#8217;t exist) and PloneTasty are two implementations of the same concept, with StickyTags being the AT/zodb implementation and PloneTasty/tasty the new microapp design (mashup architecture?) we have been working on and are pretty psyched about.</p>
+<p>And if you act now, you get the <a href="http://www.knifethrowing.info/catania.html" target="_self">knife set</a> and the <a href="http://www.abc.net.au/science/k2/lint/default.htm" target="_self">lint remover</a> too, for just 3 easy installments.</p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 9:38 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=477.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/03/04/the-me-generation/"
+    dc:identifier="https://alchemicalmusings.org/2006/03/04/the-me-generation/"
+    dc:title="The Me Generation"
+    trackback:ping="https://alchemicalmusings.org/2006/03/04/the-me-generation/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+<div class="entry">
+			<h2 class="entrydate">March 2, 2006</h2>
+			<h3 class="entrytitle" id="post-471"><a href="../../../index.html%3Fp=471.html" rel="bookmark">Faster, Better, Cheaper</a></h3>
+			<div class="entrybody">
+				<p><em>Originally published on theploneblog.org</em></p>
+<p><strong>In this episode, Sean Kelly at NASA compares j2ee, rails, zope/plone, turbogears, django&#8230; cue the laughtrack</strong></p>
+<p>Okay, this is a long one, but it rivals any comparison matrix:</p>
+<p><a href="http://oodt.jpl.nasa.gov/better-web-app.mov" target="_self">better-web-app</a></p>
+<p>Plone comes out shining, although arguably it compares apples to pomellas.  Someone with the chops should really cut this baby up into chapters, cause its  a win for dynamic  languages over j2ee, and python, and Plone to boot. (spoiler: he uses the zmi for &#8220;hello world&#8221; and ArchGenXML for the time tracking app).</p>
+<p align="left">I could also connect this presentation to ideas in <a href="http://www.bricklin.com/wontprogram.htm" target="_self">Johnny Can&#8217;t Program</a> (cited in a recent interview with <a href="http://developers.slashdot.org/article.pl?sid=06/02/28/1921208" target="_self">Behlendorf</a>) and &#8220;where have all the zmi developers&#8221; gone, but  I&#8217;ll save that for another post.</p>
+<p align="center"><img loading="lazy" decoding="async" class="aligncenter size-medium wp-image-472" title="webapps-screenshot" src="../../../wp-content/uploads/2010/01/webapps-screenshot-300x225.gif" alt="webapps-screenshot" width="300" height="225" srcset="../../../wp-content/uploads/2010/01/webapps-screenshot-300x225.gif 300w, ../../../wp-content/uploads/2010/01/webapps-screenshot.gif 320w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+				<p class="comments_link">
+					<img src="../../../wp-content/themes/gentle_calm/images/file.gif" title="file" alt="*" /> 
+					Filed by jonah at 9:29 pm under <a href="index.html" rel="category tag">plone</a><br/>
+					<a href="../../../index.html%3Fp=471.html#respond">No Comments</a>				</p>
+			</div>
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://alchemicalmusings.org/2006/03/02/faster-better-cheaper/"
+    dc:identifier="https://alchemicalmusings.org/2006/03/02/faster-better-cheaper/"
+    dc:title="Faster, Better, Cheaper"
+    trackback:ping="https://alchemicalmusings.org/2006/03/02/faster-better-cheaper/trackback/" />
+</rdf:RDF>	-->
+</div>
+
+
+
+<a href="page/2/index.html" >Next Page �</a></div>
+</div><!-- The main content column ends  -->
+<!-- begin sidebar -->
+<div id="navcol">
+ <ul id="search">
+   <form id="searchform" method="get" action="https://alchemicalmusings.org/index.php">
+	<div>
+		<input type="text" name="s" id="s" size="15" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </ul>
+
+		<h2>Links</h2>
+		<ul>
+			<li><a href="../../../index.html" title="Alchemical Musings" >Home</a></li>
+			<li><a href="https://alchemicalmusings.org/feed/" title="Syndicate this site using RSS"><img height="16" width="16" src="../../../RSS_32.png"/>RSS</a></li>
+		        <li><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=2493873&amp;loc=en_US">Subscribe by Email</a></li>
+		</ul>
+
+		<ul id="linkslist">
+		<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="../../../index.html%3Fp=2.html">About</a></li>
+<li class="page_item page-item-81"><a href="../../../index.html%3Fp=81.html">Alchemy 2.0</a></li>
+<li class="page_item page-item-1074"><a href="../../../index.html%3Fp=1074.html">Digital Communications in Theory and Practice</a></li>
+<li class="page_item page-item-39"><a href="../../../index.html%3Fp=39.html">Essays</a></li>
+<li class="page_item page-item-77"><a href="../../../index.html%3Fp=77.html">Presentations</a></li>
+<li class="page_item page-item-80"><a href="../../../index.html%3Fp=80.html">Publications</a></li>
+<li class="page_item page-item-274"><a href="../../../index.html%3Fp=274.html">Timeline</a></li>
+<li class="page_item page-item-266"><a href="../../../index.html%3Fp=266.html">Tweets</a></li>
+</ul></li>		<h2>Recent Posts</h2>
+		<a href="../../../index.html%3Fp=2308.html" rel="bookmark" title="Permanent Link: Finally! We&#039;ve Been Too Patient">Finally! We&#039;ve Been Too Patient</a><p /><a href="../../../index.html%3Fp=2277.html" rel="bookmark" title="Permanent Link: Coding Mental">Coding Mental</a><p /><a href="../../../index.html%3Fp=2265.html" rel="bookmark" title="Permanent Link: Silencing the infernal internal combustion engine">Silencing the infernal internal combustion engine</a><p /><a href="../../../index.html%3Fp=2247.html" rel="bookmark" title="Permanent Link: The Rise of Surveillance Psychiatry and the Mad Underground">The Rise of Surveillance Psychiatry and the Mad Underground</a><p /><a href="../../../index.html%3Fp=2237.html" rel="bookmark" title="Permanent Link: Interviews with the Speakerbots">Interviews with the Speakerbots</a><p />
+		</ul>		
+
+		<h2>Categories</h2>
+		<ul>
+			<b>discipline</b>
+				<li class="cat-item cat-item-5"><a href="../../discipline/aesthetics/index.html">aesthetics</a> (25)
+</li>
+	<li class="cat-item cat-item-3"><a href="../../discipline/epistemology/index.html">epistemology</a> (48)
+</li>
+	<li class="cat-item cat-item-4"><a href="../../discipline/ethics/index.html">ethics</a> (71)
+</li>
+	<li class="cat-item cat-item-2"><a href="../../discipline/metaphysics/index.html">metaphysics</a> (30)
+</li>
+			<b>element</b>
+				<li class="cat-item cat-item-7"><a href="../../elements/air/index.html">air</a> (30)
+</li>
+	<li class="cat-item cat-item-6"><a href="../../elements/earth/index.html">earth</a> (57)
+</li>
+	<li class="cat-item cat-item-8"><a href="../../elements/fire/index.html">fire</a> (56)
+</li>
+	<li class="cat-item cat-item-9"><a href="../../elements/water/index.html">water</a> (27)
+</li>
+			<b>special</b>
+				<li class="cat-item cat-item-29"><a href="../cchaiti/index.html">cchaiti</a> (1)
+</li>
+	<li class="cat-item cat-item-27"><a href="../dangerousgifts/index.html">dangerousgifts</a> (20)
+</li>
+	<li class="cat-item cat-item-30"><a href="../education/index.html">education</a> (5)
+</li>
+	<li class="cat-item cat-item-32"><a href="../endofforgetting/index.html">endofforgetting</a> (3)
+</li>
+	<li class="cat-item cat-item-28"><a href="../fourthestate/index.html">fourthestate</a> (7)
+</li>
+	<li class="cat-item cat-item-16"><a href="../freeculture/index.html">freeculture</a> (28)
+</li>
+	<li class="cat-item cat-item-23"><a href="../nmc2008-special-2/index.html">nmc2008</a> (1)
+</li>
+	<li class="cat-item cat-item-17"><a href="../nptech/index.html">nptech</a> (9)
+</li>
+	<li class="cat-item cat-item-15"><a href="../olpc/index.html">olpc</a> (1)
+</li>
+	<li class="cat-item cat-item-21"><a href="../playasbeing/index.html">playasbeing</a> (7)
+</li>
+	<li class="cat-item cat-item-14 current-cat"><a aria-current="page" href="index.html">plone</a> (12)
+</li>
+
+		  <li id="linkcat-19" class="linkcat"><h2>cohorts</h2>
+	<ul>
+<li><a href="http://mcuringa.blogspot.com/" title=" (Last updated December 31, 1969 7:00 pm)">Matt Curinga</a></li>
+<li><a href="http://www.networkedchange.com/" title=" (Last updated December 31, 1969 7:00 pm)">Networked Change</a></li>
+<li><a href="http://participations.wordpress.com/" title=" (Last updated December 31, 1969 7:00 pm)">Participation(s)</a></li>
+<li><a href="http://blog.ulisesmejias.com/" title=" (Last updated December 31, 1969 7:00 pm)">Ulises Mejias</a></li>
+<li><a href="http://indypendent.typepad.com/academese/" title=" (Last updated December 31, 1969 7:00 pm)">Unpacking My Library</a></li>
+<li><a href="http://www.columbia.edu/~bjp2108/blog/" title=" (Last updated December 31, 1969 7:00 pm)">Working Notes</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-18" class="linkcat"><h2>colleages</h2>
+	<ul>
+<li><a href="http://ccnmtl.columbia.edu/web/index.html" title="My Employer (Last updated December 31, 1969 7:00 pm)">CCNMTL</a></li>
+<li><a href="http://clayfox.com/index.php" title=" (Last updated December 31, 1969 7:00 pm)">Clayfox</a></li>
+<li><a href="http://graffitiweb.org/" title=" (Last updated December 31, 1969 7:00 pm)">Graffiti Web</a></li>
+<li><a href="http://theploneblog.org/search?SearchableText=&#038;Title=&#038;Subject_usage%3Aignore_empty=&#038;Description=&#038;created%3Alist%3Adate=1970%2F02%2F01&#038;created_usage=range%3Amin&#038;portal_type%3Alist=WeblogEntry&#038;Creator=mrenoch&#038;rs_toggl" title=" (Last updated December 31, 1969 7:00 pm)">Me on the ThePloneBlog</a></li>
+<li><a href="http://technorati.com/search/bossewitch?from=olpcnews.com" title="Me On OLPC News (Last updated December 31, 1969 7:00 pm)">MeOnOLPCNews</a></li>
+<li><a href="http://thraxil.com/" title=" (Last updated December 31, 1969 7:00 pm)">Thraxil</a></li>
+<li><a href="http://users.livejournal.com/_wirehead_" title=" (Last updated December 31, 1969 7:00 pm)">_wirehead_</a></li>
+
+	</ul>
+</li>
+  <li id="linkcat-20" class="linkcat"><h2>conspirators</h2>
+	<ul>
+<li><a href="http://aramsinnreich.typepad.com/aram_squalls/" title=" (Last updated December 31, 1969 7:00 pm)">Aram Squalls</a></li>
+<li><a href="http://collectivecommunicationscampus.wordpress.com/" title=" (Last updated December 31, 1969 7:00 pm)">Collective Communications Campus</a></li>
+<li><a href="http://furiousseasons.com/" title="Philip Dawdy (Last updated December 31, 1969 7:00 pm)">Furious Seasons</a></li>
+<li><a href="http://www.healthhacker.org/satoroams/" title="Biella Coleman (Last updated December 31, 1969 7:00 pm)">Interprete</a></li>
+<li><a href="http://theicarusproject.net" title=" (Last updated December 31, 1969 7:00 pm)">The Icarus Project</a></li>
+<li><a href="http://wisecontradictions.com" title="Ted Bongiovianni&#8217;s Wise Contradictions (Last updated December 31, 1969 7:00 pm)">Wise Contradictions</a></li>
+
+	</ul>
+</li>
+
+
+		<li class="pagenav"><h2>Topics</h2><ul><li class="page_item page-item-582"><a href="../../../2013/12/12/hippocratic-hypocrisy/alchemicalmusings.org/topics/dangerous-gifts/index.html">Dangerous Gifts</a></li>
+<li class="page_item page-item-576"><a href="../../../index.html%3Fp=576.html">The End of Forgetting</a></li>
+</ul></li>
+		</ul>
+		<h2>Archives</h2>
+		<ul>
+				<li><a href='../../../2019/07/index.html'>July 2019</a></li>
+	<li><a href='../../../2019/03/index.html'>March 2019</a></li>
+	<li><a href='../../../2018/12/index.html'>December 2018</a></li>
+	<li><a href='../../../2017/12/index.html'>December 2017</a></li>
+	<li><a href='../../../2017/08/index.html'>August 2017</a></li>
+	<li><a href='../../../2017/03/index.html'>March 2017</a></li>
+	<li><a href='../../../2015/08/index.html'>August 2015</a></li>
+	<li><a href='../../../2015/02/index.html'>February 2015</a></li>
+	<li><a href='../../../2014/11/index.html'>November 2014</a></li>
+	<li><a href='../../../2014/09/index.html'>September 2014</a></li>
+	<li><a href='../../../2014/02/index.html'>February 2014</a></li>
+	<li><a href='../../../2014/01/index.html'>January 2014</a></li>
+	<li><a href='../../../2013/12/index.html'>December 2013</a></li>
+	<li><a href='../../../2013/09/index.html'>September 2013</a></li>
+	<li><a href='../../../2013/07/index.html'>July 2013</a></li>
+	<li><a href='../../../2013/06/index.html'>June 2013</a></li>
+	<li><a href='../../../2013/04/index.html'>April 2013</a></li>
+	<li><a href='../../../2013/02/index.html'>February 2013</a></li>
+	<li><a href='../../../2013/01/index.html'>January 2013</a></li>
+	<li><a href='../../../2012/10/index.html'>October 2012</a></li>
+	<li><a href='../../../2012/09/index.html'>September 2012</a></li>
+	<li><a href='../../../2012/08/index.html'>August 2012</a></li>
+	<li><a href='../../../2012/05/index.html'>May 2012</a></li>
+	<li><a href='../../../2012/04/index.html'>April 2012</a></li>
+	<li><a href='../../../2012/02/index.html'>February 2012</a></li>
+	<li><a href='../../../2012/01/index.html'>January 2012</a></li>
+	<li><a href='../../../2011/12/index.html'>December 2011</a></li>
+	<li><a href='../../../2011/09/index.html'>September 2011</a></li>
+	<li><a href='../../../2011/08/index.html'>August 2011</a></li>
+	<li><a href='../../../2011/07/index.html'>July 2011</a></li>
+	<li><a href='../../../2011/06/index.html'>June 2011</a></li>
+	<li><a href='../../../2011/03/index.html'>March 2011</a></li>
+	<li><a href='../../../2011/01/index.html'>January 2011</a></li>
+	<li><a href='../../../2010/12/index.html'>December 2010</a></li>
+	<li><a href='../../../2010/11/index.html'>November 2010</a></li>
+	<li><a href='../../../2010/10/index.html'>October 2010</a></li>
+	<li><a href='../../../2010/09/index.html'>September 2010</a></li>
+	<li><a href='../../../2010/07/index.html'>July 2010</a></li>
+	<li><a href='../../../2010/05/index.html'>May 2010</a></li>
+	<li><a href='../../../2010/01/index.html'>January 2010</a></li>
+	<li><a href='../../../2009/12/index.html'>December 2009</a></li>
+	<li><a href='../../../2009/10/index.html'>October 2009</a></li>
+	<li><a href='../../../2009/09/index.html'>September 2009</a></li>
+	<li><a href='../../../2009/08/index.html'>August 2009</a></li>
+	<li><a href='../../../2009/07/index.html'>July 2009</a></li>
+	<li><a href='../../../2009/06/index.html'>June 2009</a></li>
+	<li><a href='../../../2009/05/index.html'>May 2009</a></li>
+	<li><a href='../../../2009/04/index.html'>April 2009</a></li>
+	<li><a href='../../../2009/03/index.html'>March 2009</a></li>
+	<li><a href='../../../2009/02/index.html'>February 2009</a></li>
+	<li><a href='../../../2009/01/index.html'>January 2009</a></li>
+	<li><a href='../../../2008/12/index.html'>December 2008</a></li>
+	<li><a href='../../../2008/11/index.html'>November 2008</a></li>
+	<li><a href='../../../2008/10/index.html'>October 2008</a></li>
+	<li><a href='../../../2008/09/index.html'>September 2008</a></li>
+	<li><a href='../../../2008/08/index.html'>August 2008</a></li>
+	<li><a href='../../../2008/07/index.html'>July 2008</a></li>
+	<li><a href='../../../2008/06/index.html'>June 2008</a></li>
+	<li><a href='../../../2008/05/index.html'>May 2008</a></li>
+	<li><a href='../../../2008/04/index.html'>April 2008</a></li>
+	<li><a href='../../../2008/03/index.html'>March 2008</a></li>
+	<li><a href='../../../2008/02/index.html'>February 2008</a></li>
+	<li><a href='../../../2008/01/index.html'>January 2008</a></li>
+	<li><a href='../../../2007/12/index.html'>December 2007</a></li>
+	<li><a href='../../../2007/11/index.html'>November 2007</a></li>
+	<li><a href='../../../2007/10/index.html'>October 2007</a></li>
+	<li><a href='../../../2007/09/index.html'>September 2007</a></li>
+	<li><a href='../../../2007/08/index.html'>August 2007</a></li>
+	<li><a href='../../../2007/07/index.html'>July 2007</a></li>
+	<li><a href='../../../2007/06/index.html'>June 2007</a></li>
+	<li><a href='../../../2007/05/index.html'>May 2007</a></li>
+	<li><a href='../../../2007/04/index.html'>April 2007</a></li>
+	<li><a href='../../../2007/03/index.html'>March 2007</a></li>
+	<li><a href='../../../2007/02/index.html'>February 2007</a></li>
+	<li><a href='../../../2006/12/index.html'>December 2006</a></li>
+	<li><a href='../../../2006/11/index.html'>November 2006</a></li>
+	<li><a href='../../../2006/09/index.html'>September 2006</a></li>
+	<li><a href='../../../2006/08/index.html'>August 2006</a></li>
+	<li><a href='../../../2006/07/index.html'>July 2006</a></li>
+	<li><a href='../../../2006/05/index.html'>May 2006</a></li>
+	<li><a href='../../../2006/04/index.html'>April 2006</a></li>
+	<li><a href='../../../2006/03/index.html'>March 2006</a></li>
+	<li><a href='../../../2006/02/index.html'>February 2006</a></li>
+	<li><a href='../../../2006/01/index.html'>January 2006</a></li>
+	<li><a href='../../../2005/12/index.html'>December 2005</a></li>
+	<li><a href='../../../2005/11/index.html'>November 2005</a></li>
+	<li><a href='../../../2005/10/index.html'>October 2005</a></li>
+	<li><a href='../../../2005/09/index.html'>September 2005</a></li>
+		</ul>
+		
+			</div>
+<!-- end sidebar --><!-- begin footer -->
+</div>
+<div id="footer">
+		  		<p>
+<!--Creative Commons License--><a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/"><img alt="Creative Commons License" border="0" src="https://creativecommons.org/images/public/somerights20.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+		<Work rdf:about="">
+			<license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/" />
+		</Work>
+		<License rdf:about="http://creativecommons.org/licenses/by-sa/2.5/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+		  			<!-- CC Jonah Bossewitch (plus any additional footer info) -->&nbsp;
+		  		</p>
+		 
+		<p>
+			Using the <a href="http://www.ifelse.co.uk/gentle-calm">Gentle Calm theme</a> designed by <a href="http://www.ifelse.co.uk">Phu Ly</a>. 
+			<a href="http://www.wordpress.org" title="Wordpress">WordPress</a> took 0.131 seconds to generate this 
+			<a href="http://validator.w3.org/check/referer" title="Validate this document as XHTML 1.0 @ W3C.org" >XHTML</a> page.</p>
+	</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/gentle_calm\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<script type="text/javascript">
+    window._idl = {};
+    _idl.variant = "banner";
+    (function() {
+        var idl = document.createElement('script');
+        idl.type = 'text/javascript';
+        idl.async = true;
+        idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
+        document.getElementsByTagName('body')[0].appendChild(idl);
+    })();
+</script>
+
+/* reset the net - http://resetthenet.tumblr.com/post/84330794665/the-reset-the-net-splash-screen */
+<script type="text/javascript">
+   window._idl = {};
+   _idl.variant = "modal";
+   _idl.campaign = "reset-the-net";
+   (function() {
+     var idl = document.createElement('script');
+     idl.type = 'text/javascript';
+     idl.async = true;
+     idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url= ' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
+     document.getElementsByTagName('body')[0].appendChild(idl);
+   })();
+</script>
+
+</body>
+</html>
+<!-- end default template admin -->
